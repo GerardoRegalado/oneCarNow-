@@ -3,6 +3,7 @@
 // ./src/components/Home/Home.js
 
 import { useState, useContext } from 'react'
+import { Link } from 'react-router-dom'
 import PetsContext from './../../context/Pets/PetsContext'
 
 import UsersContext from './../../context/Users/UsersContext'
@@ -53,57 +54,30 @@ export default function Home() {
 
   return (
 	<>
-
-		<h1>Crear mascota</h1>
-		<form onSubmit={(evt) => { handleSubmit(evt) }}>
-			<label>Nombre</label>
-			<input 
-				name="name"
-				value={newPet.name}
-				onChange={(evt) => { handleChange(evt) }}
-			/>
-
-			<label>Descripción</label>
-			<input 
-				name="description"
-				value={newPet.description}
-				onChange={(evt) => { handleChange(evt) }}
-			/>
-
-			<button type="submit">Crear mascota</button>
-
-		</form>
-
-		<h1>Listado de mascotas</h1>
-
-		<button onClick={() => { getPets() }}>
-			Obtener perros
-		</button>
-		<div>
-		{
-			pets.map((elt) => {
-				return (
-					<div key={elt._id}>
-						<h1>{elt.name}</h1>
-						<p>{elt.description}</p>
-					</div>
-				)
-			})
-		}
-		</div>
-
-
-		<hr />
-
-		<p>Verificar autenticación</p>
-		<button onClick={() => { verifyingToken() }}>VERIFICAR</button>
-
-		<h1>Tu usuario:</h1>
-		<p>{currentUser.name}</p>
-		<p>{currentUser.lastname}</p>
-		<p>{currentUser.email}</p>
-
-
+		<section className='container'>
+			<div className='inicio'>
+				<div className="titular">
+					
+						<img src="logo.svg" alt="aqui deberia ir algo" />
+					
+				</div>
+				<div className='login'>
+					<Link to='/login'>
+						<div className='boton-uno'> Iniciar sesion</div>
+					</Link>
+				</div>
+					<p> 
+						Plataforma unica para actuales conductores
+					</p>
+					<Link to= '/comenzar'>
+						<div className='comenzar'>
+						comenzar proceso
+						</div>
+					</Link>
+				
+			</div>	
+		</section>
+		
 	</>
   )
 }
