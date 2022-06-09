@@ -10,14 +10,12 @@ export default function Auth({ component: Component }) {
 
 	const userCtx = useContext(UsersContext)
 
-	const { 
-		authStatus, 
-		verifyingToken } = userCtx
+	const { authStatus, verifyingToken } = userCtx
 
 
 	useEffect(() => {
 		verifyingToken()
-	}, [authStatus])
+	}, [authStatus, verifyingToken])
 
 
   return (

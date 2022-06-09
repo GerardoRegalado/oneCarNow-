@@ -51,7 +51,7 @@ export default function Login() {
                 <label for="floatingInput">Correo o usuario</label>
               </div>
               <div class="form-floating">
-                <input type="password" value={data.email} onChange={(evt) => { handleChange(evt)}} class="form-control" id="floatingPassword" placeholder="Password"/>
+                <input name='password' type="password" value={data.password} onChange={(evt) => { handleChange(evt)}} class="form-control" id="floatingPassword" placeholder="Password"/>
                 <label for="floatingPassword">Contrasena</label>
               </div>
             </div>
