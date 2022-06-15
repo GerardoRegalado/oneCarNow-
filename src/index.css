@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
@@ -107,132 +109,296 @@ code {
 
 /* !<---------------------  LOGIN ----------------> */
 
-.form {
 
-    position: absolute;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 90%;
-    top: 20%;
-    left: 5%;
-    display: flex;
-    height: 30rem;
-   
-}
-
-.input{
-
-  
-  position: relative;
-  width: 100%;
-  top: 30%;
-  left: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 10;
-    
-}
-
-.form-group {
-  
+.fondo {
   position: absolute;
-  top:30%;
-  left:25%;
+  background-color:#6210FF;
+  width: 100%;
+  height: 100%;
+  
+}
 
+.OCNblanco img{
+  position: relative;
+  width: 132px;
+  height: 73px;
+  left: 17px;
+  top: 18px
+ 
+}
+
+.NetaV img{
+  position: absolute;
+  width: 565px;
+  height: 235px;
+  left: -73px;
+  top: 119px;
+}
+
+.rectangulo{
+  background: #FFFFFF;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top:400px;
+  border-radius: 25px 25px 0px 0px;
 
 }
 
-.botos-dos{
+.Bienvenido {
 
   position: absolute;
-}
-
-
-.title {
-
-  position: relative;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  top: 10%;
-  left: 50%;
-  color: white;
-  text-align: center;
-  font-size: 2rem;
+  width: 196px;
+  height: 24px;
+  left: 82px;
+  top: 34px;
+  
+  font-family: 'Urbanist';
+  font-style: normal;
   font-weight: 700;
-}
-
-.subtitle {
-
+  font-size: 20px;
+  line-height: 24px;
   
-  position: absolute;
-  width: 100%;
-  color: white;
-  font-size: 16px;
-  top: 20%;
-  left: 0;
+  display: flex;
+  align-items: center;
   text-align: center;
+  
+  color: #000000;
 }
 
-.linea {
+.iniciar {
+
   position: absolute;
-  width: 90%;
+width: 143px;
+height: 17px;
+left: 108px;
+top: 68px;
+
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+.input_email {
+  position: absolute;
+width: 312px;
+height: 49px;
+left: 24px;
+top: 121px;
+
+background: #F4F4F4;
+border-radius: 10px;
+}
+
+.input_email:focus {
+  position: absolute;
+width: 312px;
+height: 49px;
+left: 24px;
+top: 121px;
+
+background: #F4F4F4;
+border-radius: 10px;
+
+background: rgba(98, 16, 255, 0.1);
+border: 5px solid #6210FF;
+border-radius: 10px;
+}
+
+.input_pass {
+
+position: absolute;
+width: 312px;
+height: 49px;
+left: 24px;
+top: 184px;
+
+background: #F4F4F4;
+border-radius: 10px;
+}
+
+.input_pass:focus{
+  position: absolute;
+  width: 312px;
+  height: 49px;
+  left: 24px;
+  top: 184px;
+
+  background: rgba(98, 16, 255, 0.1);
+  border: 5px solid #6210FF;
+  border-radius: 10px;
+}
+
+.boton {
+  position: absolute;
+  width: 312px;
+  height: 49px;
+  left: 24px;
+  top: 309px;
+
+  background: #6210FF;
+  box-shadow: 0px 10px 25px rgba(98, 16, 255, 0.3);
+  border-radius: 50px;
+
+  color: #FFFFFF;
+}
+
+.forgot {
+
+  position: absolute;
+  width: 124px;
+  height: 14px;
+  left: 219px;
+  top: 256px;
+
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #6210FF;
+}
+
+/* !<---------------------  HEADER ----------------> */
+
+
+.header {
+  position: relative;
+  width: 360px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+
+  background: #8037FE;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.header img {
+
+  position: relative;
+  width: 84px;
+  height: 40px;
+  left: 21px;
+  top: 7px;
+
+}
+
+
+.navMenu{
+  margin-left: 85%;
+  margin-top: -40px;
+}
+
+.navMenu > span {
+
+  display: block;
+  background-color: #fff;
+  width: 28px;
   height: 2px;
-  background-color: white;
-  margin-left: 5%;
-  top: 19rem;
-  text-align: center;
-  color: white;
-}
-
-.fb{
-
-  position: relative;
-  top: 20rem;
-  left: 5rem;
+  border-radius:9999px ;
   
 }
 
-.ig {
+.navMenu > span:not(:last-child){
+  margin-bottom: 7px;
+}
+
+.navMenu, .navMenu > span {
+  transition: all .4s ease-in-out;
+}
+
+.navMenu.active{
+  transition-delay:  0.08s;
+  transform: rotate(45deg);
+  margin-top: -30px;
+}
+
+.navMenu.active > span:nth-child(2){
+  width: 0;
+}
+
+.navMenu.active > span:nth-child(1),
+.navMenu.active > span:nth-child(3){
+  transition-delay: 0.4s;
+}
+
+.navMenu.active > span:nth-child(1){
+  transform: translateY(9px);
+}
+
+.navMenu.active > span:nth-child(3){
+  transform: translateY(-9px) rotate(90deg);
+}
+
+/* !---------Profile-------------- */
+
+.titular {
+  display: flex;
   position: relative;
-  top: 20rem;
-  left: 8rem;
 }
 
-.go{
+.profilePicture {
   position: relative;
-  top: 20rem;
-  left: 11rem
+  margin: 20px 0 0 29px;
+  height:50px;
+  width:50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+  border-radius:50px;
+  border: 1.5px solid #47EB84;
 
 }
 
-.loginActivation{
+.profileUser{
+  position: relative;
+width: 100px;
+height: 14px;
+left: 87px;
+top: -40px;
 
-  background-color: #43d17d;
-  color: black;
-  position: absolute;
-  top: 45rem;
-  left: 30%;
-  padding: .8rem 2rem .8rem 2rem ;
-  border-radius: 20px;
-  
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+color: #212121;
 }
 
-.link {
+.profileCar{
+  position: relative;
+width: 122px;
+height: 17px;
+left: 87px;
+top: -35px;
 
-  position: absolute;
-  color: white;
-  top: 50rem;
-  left: 20%;
-  font-style: italic;
-  text-decoration: underline;
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #6210FF;
 }
 
-.container figure img {
-
-  max-width: 50%;
-  position: absolute;
-  top: 3rem;
-  left: 25%
-}

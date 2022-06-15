@@ -8,6 +8,7 @@ import UsersState from './context/Users/UsersState';
 
 import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
+import Profile from './components/profile/Profile'
 
 import Auth from './routes/Auth'
 import Public from './routes/Public';
@@ -48,6 +49,12 @@ function Router() {
                   } 
                 />                
 
+                <Route 
+                  path="profile"
+                  element={
+                    <Auth component={Profile} />
+                  } 
+                /> 
 
 
 

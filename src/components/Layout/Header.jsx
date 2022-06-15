@@ -14,14 +14,29 @@ export default function Header() {
     
     } = ctxUser
 
+
+	function Menu(){
+
+		var navMenu = document.querySelector('.navMenu')
+		navMenu.classList.toggle('active')
+
+	   
+   }
+
   return (
     <>
-        <header>
+        <header className='header'>
             <figure>
-               <Link to="/"> LOGO</Link>
+               <Link to="/"><img src="assets/OCNblanco.png" alt="aqui va algo" /></Link>
             </figure>
+			<div className='navMenu' onClick={()=>{Menu()}}>
+            	<span></span>
+                <span></span>   
+				<span></span>
+             </div>
+		</header>
 
-                <nav>   
+                {/* { <nav>   
                     <ul>
 
                         {
@@ -29,13 +44,9 @@ export default function Header() {
 						(
 							<>
 								<li>
-									<Link
-										to="/"
-										onClick={() => {logoutUser()}}
-									>
-										Cerrar sesión		
-									</Link>
+									<Link to="/"onClick={() => {logoutUser()}}> Cerrar sesión		</Link>
 								</li>
+
 								<li>{currentUser.name}</li>
 							</>
 						) :
@@ -61,10 +72,9 @@ export default function Header() {
 					}
                     
                     </ul>
-                </nav>
+                </nav> } */}
 
-        </header>
-
+       
     </>
   )
 }
