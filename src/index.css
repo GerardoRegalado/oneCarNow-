@@ -278,7 +278,7 @@ border-radius: 10px;
 
 .header {
   position: relative;
-  width: 360px;
+  width: 100%;
   height: 55px;
   left: 0px;
   top: 0px;
@@ -347,58 +347,217 @@ border-radius: 10px;
 
 /* !---------Profile-------------- */
 
-.titular {
+.data{
   display: flex;
-  position: relative;
+  margin-top: 2em;
+  width: 100%;
+  height: 5em;
 }
 
-.profilePicture {
-  position: relative;
-  margin: 20px 0 0 29px;
-  height:50px;
-  width:50px;
-  -moz-border-radius:50px;
-  -webkit-border-radius:50px;
-  border-radius:50px;
-  border: 1.5px solid #47EB84;
-
+.data img {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  width: 4em ;
+  height: 4em;
+  border-radius:50%;
+  border: 2px solid #43d17d
 }
 
-.profileUser{
-  position: relative;
-width: 100px;
-height: 14px;
-left: 87px;
-top: -40px;
-
-font-family: 'Urbanist';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-display: flex;
-align-items: center;
-
-color: #212121;
+.data h4 {
+    margin-left:9em;
+    margin-top: -4em;
+    color: #000000;
+    font-family: 'Urbanist';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14.4px;
+     
 }
 
-.profileCar{
-  position: relative;
-width: 122px;
-height: 17px;
-left: 87px;
-top: -35px;
-
-font-family: 'Urbanist';
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 17px;
-/* identical to box height */
-
-display: flex;
-align-items: center;
-
-color: #6210FF;
+.data p {
+  position: absolute;
+  width: 130px;
+  height: 17px;
+  left: 7.5em;
+  top: 9em;
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6210FF;;
 }
 
+.menu {
+  width: 100%;
+  height: 100%;
+}
+
+.invoice_info {
+  margin-top: 2em ;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.invoice_info p{
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.invoice_info span{
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+
+.services {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 1.5em;
+  margin-top: 2em;
+}
+
+
+.service img{
+  width: 4em ;
+  height: 4em;
+  border-radius:50%;
+  margin: 0.3em;
+  margin-bottom: 3em;
+  background-color: #C493F4;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.7);
+}
+
+.service span {
+  position: relative;
+  top: 3em;
+  left: -4em;
+  bottom: 2px;
+}
+
+.rectangle11{
+  width: 90%;
+  background-color: #8037FE;
+  height: 169px;
+  left: 24px;
+  background: #8037FE;
+  border-radius: 12px;
+  margin-left:5% ;
+  margin-top: 3em;
+}
+
+.rectangle11 div {
+  display: flex;
+}
+
+.rectangle11 img {
+  width: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.rectangle11 p {
+  color: white;
+  margin-left: 4em;
+  margin-top: -1.5em;
+}
+
+.options {
+ margin-left: 90%;
+ margin-top: -2em;
+}
+
+.options span {
+  width: 3px;
+  height: 3px;
+  margin-left: 0.3em;
+  background: #F8EEEE;
+}
+
+.total {
+  width: 100%;
+  margin-top: 2.5em;
+}
+
+.total span {
+  color: #fff;
+  margin-top: 5px;
+  margin-left: 1em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.total div {
+
+  background-color: #212121;
+  color: #fff;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 10px;
+  margin-left: 4em;
+  cursor: pointer;
+}
+
+.limit_date{
+  margin-top: 1em;
+  margin-left:1.5em ;
+  display: flex;
+}
+
+.limit_date div {
+  padding: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.limit_date span {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 15px;
+  margin-left: -6.3em;
+}
+
+.incident{
+  display: grid;
+    width: 9em;
+    height: 4em;
+    background: #47EB84;
+    border-radius: 16px;
+    text-align: center;
+    margin-left: 60%;
+    margin-top: 2em;
+    align-items: start;
+}
+
+
+.incident span {
+  position: relative;
+  margin-top: 1em;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 18px;
+}
