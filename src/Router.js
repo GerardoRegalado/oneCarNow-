@@ -9,9 +9,11 @@ import UsersState from './context/Users/UsersState';
 import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
 import Profile from './components/profile/Profile'
+import Admin from './components/admin/Admin';
 
 import Auth from './routes/Auth'
 import Public from './routes/Public';
+import navAdmin from './components/admin/nav-admin/nav-admin';
 
 
 
@@ -26,38 +28,22 @@ function Router() {
       <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
-                <Route 
-                  index 
-                  element={
-                    <Public component={Home}
-                  />} 
-                />
+                
+                <Route index element={ <Public component={Home}/>} />
 
                 {/* localhost:3000/registro */}
-                <Route 
-                  path="registro"
-                  element={
-                    <Auth component={Register} />
-                  } 
-                />
+                <Route path="registro"  element={ <Auth component={Register}/>} />
 
                 {/* localhost:3000/login */}
-                <Route 
-                  path="login"
-                  element={
-                    <Auth component={Login} />
-                  } 
-                />                
+                <Route path="login"     element={ <Auth component={Login} /> } />                
 
-                <Route 
-                  path="profile"
-                  element={
-                    <Auth component={Profile} />
-                  } 
-                /> 
+                {/* localhost:3000/profile */}
+                <Route path="profile"   element={<Auth component={Profile} />} /> 
 
+                {/* localhost:3000/admin */}
+                <Route path="admin"     element={<Auth component={navAdmin} />}  /> 
 
-
+  
             </Route>
 
           </Routes>
